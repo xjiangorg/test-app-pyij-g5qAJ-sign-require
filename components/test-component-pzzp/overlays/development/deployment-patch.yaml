@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pzzp
+  namespace: build-e2e-tvul-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:fab53ee103865174e1fcbff1a4e05e6c8855f9f9f63ba9b386a8c9a9d3603a77
+        name: my-python
+        resources: {}
+status: {}
